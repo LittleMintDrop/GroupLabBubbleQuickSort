@@ -1,3 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	return 0;
+}
+
 void bubbleSort(int arr[], int length)
 {
     //Keeps track on what iteration its currently on.
@@ -7,7 +16,7 @@ void bubbleSort(int arr[], int length)
 	while (iteration < length - 1)
 	{
 	    //Runs through the unsorted part of the array until it reaches the end of the array or the end of the unsorted part of the array.
-		for (int i = 0; i < n - iteration; i++)
+		for (int i = 0; i < length - iteration; i++)
 		{
 		    //If the number at index i is greater than the number at index i + 1, swap.
 			if (arr[i] > arr[i + 1])
